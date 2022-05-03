@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1651555666965
+Build-Jdk: 11.0.12
+Built-By: PoojaS13
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-ClassPath: .,mysql-connector-java-8.0.11.jar
+Bundle-Description: Empty Camel Blueprint Example
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Empty Camel Blueprint Example [Camel-sql-component]
+Bundle-SymbolicName: Camel-sql-component
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: com.mysql.cj.jdbc.Driver;version="[8.0.28,8.0.29)
+ "
+Embed-Dependency: mysql-connector-java
+Embedded-Artifacts: mysql-connector-java-8.0.11.jar;g="mysql";a="mysql-c
+ onnector-java";v="8.0.11"
+Export-Package: com.component.example;uses:="javax.sql,org.apache.camel.
+ builder";version="1.0.0",com.component.model;version="1.0.0"
+Import-Package: com.google.protobuf;version="[3.11,4)",com.mchange.v2.c3
+ p0,javax.crypto,javax.management,javax.naming,javax.naming.ldap,javax.n
+ aming.spi,javax.net.ssl,javax.security.auth.callback,javax.security.aut
+ h.x500,javax.security.sasl,javax.sql,javax.transaction.xa;version="[1.1
+ ,2)",javax.xml.parsers,javax.xml.stream,javax.xml.transform,javax.xml.t
+ ransform.dom,javax.xml.transform.sax,javax.xml.transform.stax,javax.xml
+ .transform.stream,org.apache.camel.builder;version="[2.17,3)",org.apach
+ e.commons.dbcp;version="[1.4,2)",org.osgi.service.blueprint;version="[1
+ .0.0,2.0.0)",org.slf4j;version="[1.7,2)",org.w3c.dom,org.xml.sax,org.xm
+ l.sax.helpers
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007
